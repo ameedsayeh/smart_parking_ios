@@ -71,7 +71,6 @@ class ParkingTableViewController: UITableViewController, CLLocationManagerDelega
             self.sortParkings()
             self.tableView.reloadData()
         }
-        //DataManager.shared
     }
     
     func sortParkings() {
@@ -90,12 +89,10 @@ class ParkingTableViewController: UITableViewController, CLLocationManagerDelega
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return self.parkings.count
     }
     
